@@ -1,0 +1,64 @@
+/* nav.menu-nav ul li.btn{
+    display: inline-block;
+    list-style-type: none;
+}
+nav.menu-nav ul li.btn{
+    color:rgb(219, 172, 16);
+    text-decoration: none;
+} */
+
+.btn{
+    background-color: aqua;
+}
+
+.btn a{
+    text-decoration: none;
+}
+
+h1.titre{
+    color: rgb(209, 103, 41);
+    text-align: center;
+}
+p.intro{
+    color: rgb(206, 143, 25);
+}
+p.corps{
+    color: rgb(41, 41, 61);
+}
+/* body{
+      background: url(https://images.pexels.com/photos/974471/nature-night-sky-stars-974471.jpeg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+} */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/974471/nature-night-sky-stars-974471.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#content div{
+    display: inline-block;
+}
+
+div#content div.leftbox{
+    background-color: rgb(41, 41, 61);
+    vertical-align: top;
+}
+
+div#content div.rightbox{
+    background-color: rgb(67, 67, 126);
+}
+
+/* footer{
+    background-color: rgb(44, 44, 94);
+} */
