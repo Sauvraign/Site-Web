@@ -1,18 +1,41 @@
-/* nav.menu-nav ul li.btn{
-    display: inline-block;
-    list-style-type: none;
+nav.menu-nav{
+    background-color: rgb(116, 116, 114);
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
-nav.menu-nav ul li.btn{
-    color:rgb(219, 172, 16);
+/* paramètre surlignage */
+.btn:hover {
+    background-color: rgb(138, 93, 35);
+    color:rgb(255, 255, 255);
+}
+/* paramètre du texte */
+.btn span{
+    color: pink;
+    text-align: center;
     text-decoration: none;
-} */
-
+    font-size: 28px;
+    font-weight: bold;
+    font-family : "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    /* texte dégradé */
+    background: linear-gradient(to top, rgb(138, 69, 6), rgb(255, 230, 0));
+    /* Filter remplace text shadow pour l'ombre portée */
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* contour texte */
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+}
+/* paramètres du boutton */
 .btn{
-    background-color: aqua;
-}
-
-.btn a{
-    text-decoration: none;
+    color: rgb(155, 146, 28);
+    background-color: rgb(115, 114, 116);
+    padding-left: 100px;
+    padding-right: 100px;
+    border: none;
 }
 
 h1.titre{
