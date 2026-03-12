@@ -1,9 +1,12 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url("/img/space.jpg");
     background-size: cover;
     background-position: center;
@@ -17,42 +20,44 @@ header {
 
 }
 
-.logo{
+.logo {
     position: absolute;
     width: 120px;
     /* height: 100%; */
 }
 
-.boiteTitre{
+.boiteTitre {
     display: flex;
     justify-content: center;
     flex-grow: 1;
 }
 
-h1.titre{
+h1.titre {
     color: rgb(209, 103, 41);
     font-size: 48px;
     font-weight: bold;
-    font-family : "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
     text-transform: uppercase;
-     /* texte dégradé */
+    /* texte dégradé */
     background: linear-gradient(to top, rgb(77, 39, 3), rgb(153, 94, 39), rgb(255, 230, 0), rgb(255, 255, 255));
     /* Filter remplace text shadow pour l'ombre portée */
-    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.5));
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
     background-clip: text;
     -webkit-text-fill-color: transparent;
     /* ombre interieure */
-    
+
     /* text-shadow: 1px 1px 5px rgb(0, 0, 0), 0px 0px 0px rgb(255, 255, 255); */
     /* contour texte */
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: black;
 }
 
-nav.mainmenu-nav{
+/* Menu principale */
+nav.mainmenu-nav {
     background-color: rgb(78, 77, 161);
-    padding-left:130px;
-    padding-right: 130px;;
+    padding-left: 130px;
+    padding-right: 130px;
+    ;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -60,37 +65,127 @@ nav.mainmenu-nav{
     /* gap:12px; */
 }
 
-.menu-left{
-    color:white
+/* Menu latéral gauche */
+#aside-menu {
+    padding-top: 50px;
+    width: 20%;
 }
+
+
+/* .menu-left{
+    color: white;
+    background-color: rgb(67, 67, 126);
+    display: flex;
+    justify-content: flex-start;
+    width: 138px;
+} */
+
+.label-menu {
+    position: absolute;
+        padding-top: 10px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 1px 0;
+    /* cursor: pointer; */
+    background: #33438b;
+    border-radius: 3px;
+    color: #FFF;
+    transition: ease .5s;
+    width: 150px;
+    height: 28px;
+}
+
+label:hover {
+    background: #18336d;
+}
+
+.main-content{
+    flex-grow: 4;
+}
+
+.menu-content {
+    position: absolute;
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+    text-transform: 24px;
+    margin-top: auto;
+    width: 150px;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    /* background: #33438b; */
+    border-radius: 50px;
+    color: #FFF;
+    transition: ease .5s;
+    transform: translateY(18px);
+}
+
+.menu-entries {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2px; */
+}
+
+.menu-entry {
+    background: #33438b;
+    transform: translateY(20px);
+    height: 50px;
+    text-transform: uppercase;
+    padding-top: 34px;
+
+}
+
+.menu-entry:hover {
+    background: #b36c1c;
+}
+
+input:hover+.menu-content {
+    display: block;
+}
+/* activer/désactiver le menu déroulant */
+input+.menu-content {
+    display: none;
+}
+
+input+.menu-content:hover {
+    display: block;
+}
+
+input {
+    display: none;
+}
+
 /* paramètre surlignage */
 .btn:hover {
     background-color: rgb(138, 93, 35);
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
+
 /* paramètre du texte */
-.btn span{
+.btn span {
     text-align: center;
     text-decoration: none;
     font-size: 28px;
     font-weight: bold;
-    font-family : "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
     text-transform: uppercase;
     /* texte dégradé */
     background: linear-gradient(to top, rgb(77, 39, 3), rgb(153, 94, 39), rgb(255, 230, 0), rgb(255, 255, 255));
     /* Filter remplace text shadow pour l'ombre portée */
-    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.5));
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
     background-clip: text;
     -webkit-text-fill-color: transparent;
     /* ombre interieure */
-    
+
     /* text-shadow: 1px 1px 5px rgb(0, 0, 0), 0px 0px 0px rgb(255, 255, 255); */
     /* contour texte */
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: black;
 }
+
 /* paramètres du boutton */
-.btn{
+.btn {
     color: rgb(155, 146, 28);
     background-color: rgb(78, 77, 161);
     padding-left: 30px;
@@ -98,47 +193,28 @@ nav.mainmenu-nav{
     border: none;
     cursor: pointer;
 }
-p.intro{
-    color: rgb(206, 143, 25);
-}
-p.corps{
-    color: rgb(41, 41, 61);
-}
-/* body{
-      background: url(https://images.pexels.com/photos/974471/nature-night-sky-stars-974471.jpeg) no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 
-} */
-
-div#content div{
-    display: inline-block;
-}
-
-div#content div.leftbox{
-    background-color: rgb(41, 41, 61);
-    vertical-align: top;
-}
-
-div#content div.rightbox{
+.rightbox {
     background-color: rgb(67, 67, 126);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 200px;
 }
 
-.footertitle{
+.footertitle {
     color: white;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 36px;
 }
 
-.discord{
+.discord {
     color: white;
     text-transform: uppercase;
 }
 
-.liendiscord{
+.liendiscord {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: uppercase;
@@ -146,21 +222,34 @@ div#content div.rightbox{
     font-style: italic;
     text-shadow: 2px 2px 5px rgb(0, 0, 0), 1px 0px 0px rgb(0, 0, 0);
 }
-.liendiscord:hover{
+
+.liendiscord:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-shadow: 1px 1px 10px rgb(255, 255, 255), 0px 0px 0px rgb(255, 255, 255);
 }
 
-footer{
+footer {
     display: flex;
     background-color: rgb(67, 67, 126);
     justify-content: space-evenly;
 }
 
-.conversation{
+.conversation {
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 250px;
-    width: 500px;
+    height: auto;
+    width: 250px;
+    transition: transform 0.25s ease;
+    cursor: zoom-in
 }
+
+.click-zoom input[type=checkbox]:checked~img {
+  /* how to modify this to use exact image width instead of scaling?*/
+  transform:  scale(2);
+  cursor: zoom-out
+}
+
+/* .conversation:hover{
+    width: 600px;
+} */

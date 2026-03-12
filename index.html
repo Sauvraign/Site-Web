@@ -1,77 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Cheevo Hunters</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-        <!-- Haut de page -->
-        <header>
-            <img class="logo" src="img\logo.webp">
-            <div class="boiteTitre">
-                <h1 class="titre">Cheevo Hunters</h1>
-            </div>
-        </header>
 
-        <!-- Menu de navigation -->
-        <nav class ="mainmenu-nav">
-                <button class="btn">
-                    <span href="">Welcome</span>
-                </button>
-                <button class="btn">
-                    <span href="">Leaderboard</span>
-                </button>
-                <button class="btn">
-                    <span href="">Register</span>
-                </button>
-        </nav>
-        <nav>
-            <ul class="menu-left">
-                <li>
-                Archives
-                <ul class="sub-menu">
-                    <li>Achievements</li>
-                    <li>Patch</li>
-                    <li>Datacrons</li>
-                </ul>
-                </li>
-            </ul>
-        </nav>
-        <!-- Contenu sous forme de boîtes -->
-         <div id="content">
-            <div class="leftbox">
-                <h2>
-                    Actualités
-                </h2>
+<head>
+    <title>Cheevo Hunters</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Haut de page -->
+    <header>
+        <img class="logo" src="img\logo.webp">
+        <div class="boiteTitre">
+            <h1 class="titre">Cheevo Hunters</h1>
+        </div>
+    </header>
+
+    <!-- Menu de navigation -->
+    <nav class="mainmenu-nav">
+        <button class="btn">
+            <span href="">Welcome</span>
+        </button>
+        <button class="btn">
+            <span href="">Leaderboard</span>
+        </button>
+        <button class="btn">
+            <span href="">Register</span>
+        </button>
+    </nav>
+    <main class="main-content">
+        <!-- Menu latéral -->
+        <div id="aside-menu">
+            <!-- Premier menu : Menu  -->
+            <label for="title1" class="label-menu">Guide</label>
+            <input type="checkbox" id="title1" />
+
+            <div class="menu-content">
+                <div class="menu-entries">
+                    <div class="menu-entry">Achievements</div>
+                    <div class="menu-entry">Patches</div>
+                    <div class="menu-entry">Videos</div>
+                </div>
             </div>
+
+            <!-- fin du premier menu -->
+        </div>
+
+        <!-- Contenu sous forme de boîtes -->
+        <div id="content">
             <div class="rightbox">
                 <h2>
                     Publicités
                 </h2>
-                <iframe width="560" height="315"src="https://www.youtube.com/watch?v=j3khZiP4KFk&list=PLMS9Cy4Enq5JAzNgWPK96HnkE_U7Ol3im&index=5" frameborder="0"></iframe>
+                <!-- <iframe width="560" height="315"
+                src="https://www.youtube.com/watch?v=j3khZiP4KFk&list=PLMS9Cy4Enq5JAzNgWPK96HnkE_U7Ol3im&index=5"
+                frameborder="0"></iframe> -->
             </div>
-         </div>
-        <p class="intro">
-            Bienvenue sur le site du classement des scores des chasseurs de succès lié au MMO Star Wars : The Old Republic. pâte
-        </p>
-        <p class="corps">
-            Bienvenue sur le site du classement des scores des chasseurs de succès lié au MMO Star Wars : The Old Republic. pâte
-        </p>
+        </div>
+    </main>
+    <!-- Pied de page -->
+    <footer id="content2">
+        <div class="copyright">
+            <h1 class="footertitle">
+                Contact us !
+            </h1>
+            <p class="discord">
+                Discord : <a class="liendiscord" href="https://discord.gg/bHswWa8c"
+                    target="_blank">https://discord.gg/bHswWa8c</a>
+            </p>
+        </div>
+        <div class="click-zoom">
+            <label>
+                <input type="checkbox">
+                <img class="conversation" src="img\conversation.webp">
+            </label>
+        </div>
+    </footer>
+</body>
 
-        <a href="http://google.com/" target="_blank">Lien vers google</a>
-        
-        <!-- Pied de page -->
-        <footer id="content2">
-            <div class="copyright">
-                <h1 class="footertitle">
-                    Contact us !
-                </h1>
-                <p class="discord">
-                    Discord : <a class="liendiscord" href="https://discord.gg/bHswWa8c" target="_blank">https://discord.gg/bHswWa8c</a>
-                </p>
-            </div>
-            <img class="conversation" src="img\conversation.webp">
-        </footer>
-    </body>
 </html>
