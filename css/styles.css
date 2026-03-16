@@ -194,12 +194,21 @@ input {
     cursor: pointer;
 }
 
-.rightbox {
+.midbox {
     background-color: rgb(67, 67, 126);
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: 200px;
+    width: 800px;
+    height: 540px;
+    overflow: hidden;
+}
+
+.midbox h2{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .footertitle {
